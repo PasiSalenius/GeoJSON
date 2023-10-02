@@ -38,7 +38,7 @@ extension Polygon {
 
         /// - Throws: `LinearRing.Error`
         public init(coordinates: [Position]) throws {
-            guard coordinates.count >= 4 else { throw Error.invalidCoordinateCount }
+            // guard coordinates.count >= 4 else { throw Error.invalidCoordinateCount }
             guard coordinates.first == coordinates.last else { throw Error.openRing }
 
             self.coordinates = coordinates
